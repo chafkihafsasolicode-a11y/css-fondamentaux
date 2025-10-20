@@ -1,0 +1,83 @@
+/* ✅ Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ✅ Corps général */
+  body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* ترتيب عمودي: header → main → footer */
+    background-color: #e3f2fd;
+    color: #222;
+  }
+  
+  /* ✅ HEADER */
+  header {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;   /* العنوان والنص واحد فوق واحد */
+    justify-content: center;  /* عموديًا */
+    align-items: center;      /* أفقيًا */
+    flex: 1;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    max-width: 700px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  
+  /* ✅ MAIN */
+  main {
+    display: flex;
+    justify-content: center;  /* نوسّط navigation */
+    align-items: center;
+    flex: 1;
+  }
+  
+  /* ✅ NAVIGATION */
+  nav {
+    display: flex;
+    gap: 40px;
+    background-color: #bbdefb;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #0d47a1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #0d47a1;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  /* ✅ FOOTER */
+  footer {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
